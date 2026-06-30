@@ -1,0 +1,23 @@
+{
+  "name": "proyectofinalnodefactis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/factis1972/ProyectoFinalNodeFactis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/factis1972/ProyectoFinalNodeFactis/issues"
+  },
+  "homepage": "https://github.com/factis1972/ProyectoFinalNodeFactis#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
