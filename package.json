@@ -4,20 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/factis1972/ProyectoFinalNodeFactis.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/factis1972/ProyectoFinalNodeFactis/issues"
-  },
-  "homepage": "https://github.com/factis1972/ProyectoFinalNodeFactis#readme",
+  "author": "Fabián Actis",
+  "license": "MIT",
+  "type": "module",
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase": "^12.15.0"
   }
 }
