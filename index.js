@@ -14,7 +14,8 @@ app.get("/up", (req, res) => {
     res.json({
         status: "OK",
         message: "Servidor activo y funcionando correctamente",
-    })
+    });
+});
 
 const PORT = process.env.PORT || 3001;
 
