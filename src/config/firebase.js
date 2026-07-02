@@ -25,4 +25,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 //console.log("Firebase Firestore initialized:", db); 
 
-export { db };
+export default db;
+
+//export { db };
