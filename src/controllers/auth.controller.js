@@ -1,4 +1,4 @@
-import { generateToken } from "../utils/token.generator.js";
+import { generateToken } from "../Utils/token.generator.js";
 
 const default_user = {
   id: 1,
@@ -6,7 +6,7 @@ const default_user = {
   email: "user@email.com",
   password: "strongPass123",
   admin: true,
-};
+}
 
 export const login = (req, res) => {
   const { email, password } = req.body;
