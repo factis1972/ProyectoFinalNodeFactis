@@ -16,6 +16,7 @@ import {
 
 //router.post("/", auth, createProduct);
 
+router.post("/", createProduct);
 router.get("/", getProducts);
 router.get("/:id", getProductById);
 // router.get("/:sku", getProductBySKU);
