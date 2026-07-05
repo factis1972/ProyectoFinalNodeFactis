@@ -6,7 +6,7 @@ import cors from "cors";
 import productsRouter from "./src/routes/products.router.js";
 import usersRouter from "./src/routes/users.router.js";
 import authRouter from "./src/routes/auth.router.js";
-
+import { auth } from "./src/middlewares/auth.middleware.js";
 
 
 const app = express();
@@ -20,9 +20,15 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/api/products", productsRouter);
+app.use("/api/products", productsRouter);       //http://localhost:3000/api/products
 app.use("/api/users", usersRouter);
-app.use("/api/auth", authRouter);
+
+app.use("/api/auth", authRouter);               //http://localhost:3000/api/auth/login
+//body
+//{
+//  "email": "user@email.com",
+//  "password": "strongPass123"
+//}
 
 app.get("/up", (req, res) => {
   res.json({
