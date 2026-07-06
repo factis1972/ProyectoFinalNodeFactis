@@ -20,7 +20,6 @@ export const getProducts = async () => {
   const products = [];
 
   snapshot.forEach((doc) => {
-    // console.log(doc.id, "=>", doc.data());
     products.push({
       id: doc.id,
       ...doc.data(),
@@ -50,7 +49,6 @@ export const updateProduct = async (id, product) => {
 
   if (!snapshot.exists()) {
     return null;
-    // throw new Error('El producto no existe')
   }
 
   await updateDoc(productRef, product);
